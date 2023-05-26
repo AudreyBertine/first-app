@@ -16,12 +16,12 @@ class ClientController extends Controller
         // affiche toutes les variables qui ont été envoyé dans ma requete
         //dd($_request->all());
         $client = new Client;
-        $client->nom = request('nom');
-        $client->prenom = request('prenom');
-        $client->numtel= request('numerotelephone');
-        $client->password= request('password');
+        $client->noms = request('noms');
+        $client->prenoms = request('prenoms');
+        $client->numerotelephones= request('numerotelephones');
+        $client->passwords= request('passwords');
         $client->save();
-
+        //retourne la page sur laquelle la requete a été envoyé
         return redirect()->back();
     }
 }
