@@ -13,7 +13,7 @@ return new class extends Migration
     {
         Schema::create('clients', function (Blueprint $table) {
             $table->id();
-            $table->unsignedBiInteger('bus_id');
+            $table->unsignedBigInteger('bus_id');
             $table->string('noms');
             $table->string('prenoms')->nullable();
             $table->string('numtel')->unique();

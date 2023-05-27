@@ -15,8 +15,29 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/about', function () {
+      return view('about');
+});
+//affiche notre page d'accueil
+Route::get('/accueil', function(){
+    return view('accueil');
+});
+
+//afficher notre page inscription
+Route::get('/client', [ClientController::class,"inscription"]);
+// enregistre un client dans bd
+Route::post('/client-store', [ClientController::class,"store"]);
+//afficher notre page voyager
+Route::get('voyager',[ReservationController::class,"voyager"]);
+
+
+Route::post('voyager-reserve', [ReservationController::class,"reserve"]);
+
+Route::get('/about', function () {
     return view('about');
 });
-Route::get('/client', [ClientController::class,"index"]);
 
-Route::post('/client-store', [ClientController::class,"store"]);
+
+
+Route::get('/voyager', function(){
+    return view('voyager');
+});

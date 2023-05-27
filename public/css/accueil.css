@@ -1,0 +1,102 @@
+
+.back{
+    font-family: Arial, Helvetica, sans-serif;
+   background: url(imagesite/images\ \(1\).jpeg) fixed  no-repeat
+  
+                
+}
+
+
+   
+  header {
+    background-color: #892be2;
+    color: #fff;
+    padding: 20px;
+    height: 200PX;
+  }
+   h1
+  {
+      text-align:center;
+     margin-top: 50px;
+     font-family: arial;
+     font-style: italic;
+  }
+  nav ul 
+  {
+      margin: 0;
+      padding: 0;
+  }
+ 
+ 
+ ul li.btn
+{
+    list-style: none;
+    display: inline-block;
+    
+    
+}
+ul li.btn a
+{
+    text-decoration: none;
+    color: black;
+    background-color: #1c1b1d36;
+    border-radius: 20px;
+    padding: 10px;
+    margin: 10px;
+   font-weight: bold;
+   text-align: right;
+   font-family: arial;
+    
+}
+ ul li.btn :hover 
+{
+    background-color: rgb(28, 124, 209);
+    color: rgb(102, 52, 11);
+    transition: 0.5s;
+}
+.list{
+    margin-bottom: 300px;
+}
+.list
+{
+    padding-left: 750px;
+
+}
+
+/* logo du site  */
+img
+{
+    width: 150px;
+   
+}
+.logo{
+    padding-bottom: 100px;
+   
+}
+
+.fond main section ul li 
+{
+    list-style: none;
+}
+
+/* pied de la page d'acceuil */
+footer
+{
+    background-color: black;
+    color: #fff;
+    margin: 0;
+}
+.end ul li 
+{
+    list-style: none;
+}
+img.im{
+    text-decoration: none;
+    width: 90px;
+    display: inline;
+    
+    
+}
+.end a{
+    text-decoration: none;
+}

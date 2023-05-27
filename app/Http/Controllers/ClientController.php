@@ -8,9 +8,13 @@ use App\Models\Client;
 
 class ClientController extends Controller
 {
-    public function index(){
-        return view("client.index");
+    public function inscription(){
+        return view("client.inscription");
        // return dd(Client::all());
+    }
+
+    public function accueil(){
+        return view("accueil");
     }
     public function store(Request $_request){
         // affiche toutes les variables qui ont été envoyé dans ma requete
@@ -18,8 +22,8 @@ class ClientController extends Controller
         $client = new Client;
         $client->noms = request('noms');
         $client->prenoms = request('prenoms');
-        $client->numerotelephones= request('numerotelephones');
-        $client->passwords= request('passwords');
+        $client->numtel= request('numtel');
+        $client->password= request('password');
         $client->save();
         //retourne la page sur laquelle la requete a été envoyé
         return redirect()->back();

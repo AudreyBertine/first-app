@@ -13,7 +13,7 @@ return new class extends Migration
     {
         Schema::create('reservations', function (Blueprint $table) {
             $table->id();
-            $table->unsignedBiInteger('client_id');
+            $table->unsignedBigInteger('client_id');
             $table->integer('numeroticket')->unique();
             $table->string('villedepart');
             $table->time('heuredepart');

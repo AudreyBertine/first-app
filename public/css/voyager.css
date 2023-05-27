@@ -1,0 +1,119 @@
+.formulaire
+{
+    display: flex;
+    flex-direction: column;
+}
+
+.entete{
+    text-align: center;
+    font-style: italic;
+    font-size: 20Px;
+
+}
+.tete {
+    font-weight: bold;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+  }
+
+  
+label {
+    margin-top: 10px;
+  }
+  input[type="text"],
+  select,
+  input[type="date"] {
+    padding: 5px;
+    border-radius: 5px;
+     border: none; 
+    margin-bottom: 10px;
+  }
+  /* bouton de soumission */
+  input[type="submit"] {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+  }
+  
+  input[type="submit"]:hover {
+    background-color: #3e8e41;
+  }
+   /* entete de la page */
+  header {
+    background-color: rgb(34, 44, 175);
+    color: #fff;
+    padding: 20px;
+  }
+  
+  h1 {
+    margin: 0;
+    padding: 10px;
+  }
+  
+  nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  nav ul li.bt {
+    display: inline-block;
+    margin-right: 20px;
+   
+    color: black;
+  }
+  
+  nav ul li.bt  a {
+    color: black;
+    text-decoration: none;
+    background-color: rgb(21, 87, 104);
+    border-radius: 20px;
+    padding: 7px;
+    ;
+  }
+  nav ul li.bt :hover
+  {
+      background-color: blanchedalmond;
+      color:black ;
+      transition: 0.5s;
+      
+  }
+  
+  main {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  footer {
+    background-color: rgb(34, 44, 175);
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+  }
+
+  /* logo des opérateurs economiques */
+  .image
+  {
+      width: 150px;
+      padding-top: 5PX;
+  }
+
+  #image1,#image2,#image3{
+      width: 70px;
+  }
+
+  }
+  #image1
+  {
+      margin-left: 10px;
+  }
+  a :hover{
+   transition: 1s;
+    width: 200px;
+  }
