@@ -13,13 +13,15 @@ return new class extends Migration
     {
         Schema::create('clients', function (Blueprint $table) {
             $table->id();
-            $table->unsignedBigInteger('bus_id');
+           // $table->unsignedBigInteger('bus_id') -> default(0);
             $table->string('noms');
             $table->string('prenoms')->nullable();
             $table->string('numtel')->unique();
             $table->string('password')->unique();
-            $table->foreign('bus_id')->references('id')->on('bus');
+           // $table->foreign('bus_id')->references('id')->on('bus');
             $table->timestamps();
+
+
         });
     }
 

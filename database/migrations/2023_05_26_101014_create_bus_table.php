@@ -17,6 +17,7 @@ return new class extends Migration
             $table->integer('nbreplace');
             $table->timestamps();
 
+            
 
         });
     }
