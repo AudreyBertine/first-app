@@ -13,7 +13,7 @@
               <ul>
                 <li class="bt"><a href="{{asset ('accueil')}}">Accueil</a></li>
                 <li class="bt"><a href="{{asset('/client')}}">Inscription</a></li>
-                <li class="bt"><a href="connexion.blade.php">Connexion</a></li>
+                <li class="bt"><a href="{{asset('connexion')}}">Connexion</a></li>
                 <li class="bt"><a href=""> Voyager</a></li>
               </ul>
             </nav>

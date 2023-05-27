@@ -1,11 +1,11 @@
-ss<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="fr">
   <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>connexion</title>
-    <link rel="stylesheet" href="{{('css/connexionstyle.css')}}">
+    <link rel="stylesheet" href="{{asset('css/connexionstyle.css')}}">
     <link rel="stylesheet" href="awesome/css/all.css">
   </head>
   <body>
@@ -13,31 +13,31 @@ ss<!DOCTYPE html>
       <h1>Formulaire de connexion </h1>
       <nav>
         <ul>
-          <li class="bt"><a href="page d'acceuil.html">Accueil</a></li>
-          <li class="bt"><a href="testhtml.html">Inscription</a></li>
+          <li class="bt"><a href="{{asset('accueil')}}">Accueil</a></li>
+          <li class="bt"><a href="{{asset('client')}}">Inscription</a></li>
           <li class="bt"><a href="#">Connexion</a></li>
-          <li class="bt"><a href="h2.html"> Voyager</a></li>
+          <li class="bt"><a href="{{asset('voyager')}}"> Voyager</a></li>
         </ul>
       </nav>
     </header>
     <main>
       <form action="">
         <label for="nom">Nom(s) :</label>
-        <input type="text" id="nom" name="nom" required>
+        <input type="text" id="nom" name="noms" required>
         <i class="fas fa-check-circle"></i>
         <i class="fas fa-exclamation"></i>
         <br/>
         <br/>
         <br/>
         <label for="prenom">Prénom(s) :</label>
-        <input type="text" id="prenom" name="prenom" required>
+        <input type="text" id="prenom" name="prenoms" required>
         <i class="fas fa-check-circle"></i>
         <i class="fas fa-exclamation"></i>
         <br/>
         <br/>
         <br/>
         <label for="password">Mot de passe :</label>
-        <input type="text" id="email" name="num_tel" required>
+        <input type="text" id="email" required>
         <i class="fas fa-check-circle"></i>
         <i class="fas fa-exclamation"></i>
         <br/>

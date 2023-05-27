@@ -11,13 +11,8 @@ return new class extends Migration
      */
     public function up(): void
     {
-        Schema::create('bus', function (Blueprint $table) {
-            $table->id();
-            $table->integer('numbus')->unique();
-            $table->integer('nbreplace');
-            $table->timestamps();
-
-
+        Schema::table('bus', function (Blueprint $table) {
+            //
         });
     }
 
@@ -26,6 +21,8 @@ return new class extends Migration
      */
     public function down(): void
     {
-        Schema::dropIfExists('bus');
+        Schema::table('bus', function (Blueprint $table) {
+            //
+        });
     }
 };

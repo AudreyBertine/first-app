@@ -20,7 +20,7 @@
             <ul>
                 <li class="btn"><a href="">Accueil</a></li>
                 <li class="btn"><a href="{{asset('client')}}">Inscription</a></li>
-                <li class="btn"><a href="connexion.html">Connexion</a></li>
+                <li class="btn"><a href="{{asset('connexion')}}">Connexion</a></li>
                 <li class="btn"><a href="{{asset ('voyager')}}">Voyager</a></li>
             </ul>
         </nav>
