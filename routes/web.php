@@ -28,9 +28,14 @@ Route::get('/client', [ClientController::class,"inscription"]);
 Route::post('/client-store', [ClientController::class,"store"]);
 //afficher notre page voyager
 Route::get('voyager',[ReservationController::class,"voyager"]);
-
-
 Route::post('voyager-reserve', [ReservationController::class,"reserve"]);
+
+//Route::get('connexion',[ReservationController::class,"connexion"]);
+//Route::post('connexion-connect', [ReservationController::class,"connect"]);
+
+Route::get('/connexion', function () {
+    return view('connexion');
+});
 
 Route::get('/about', function () {
     return view('about');

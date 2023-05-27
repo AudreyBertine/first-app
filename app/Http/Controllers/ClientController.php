@@ -19,6 +19,7 @@ class ClientController extends Controller
     public function store(Request $_request){
         // affiche toutes les variables qui ont été envoyé dans ma requete
         //dd($_request->all());
+        //dd($_request->post());
         $client = new Client;
         $client->noms = request('noms');
         $client->prenoms = request('prenoms');

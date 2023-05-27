@@ -11,8 +11,8 @@
             <h1>formulaire de payement de billets</h1>
             <nav>
               <ul>
-                <li class="bt"><a href="acceuil.blade.php">Accueil</a></li>
-                <li class="bt"><a href="inscription.blade.php">Inscription</a></li>
+                <li class="bt"><a href="{{asset ('accueil')}}">Accueil</a></li>
+                <li class="bt"><a href="{{asset('/client')}}">Inscription</a></li>
                 <li class="bt"><a href="connexion.blade.php">Connexion</a></li>
                 <li class="bt"><a href=""> Voyager</a></li>
               </ul>

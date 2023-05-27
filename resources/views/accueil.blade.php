@@ -19,9 +19,9 @@
         <nav class="menunav">
             <ul>
                 <li class="btn"><a href="">Accueil</a></li>
-                <li class="btn"><a href="inscription.blade.php">Inscription</a></li>
+                <li class="btn"><a href="{{asset('client')}}">Inscription</a></li>
                 <li class="btn"><a href="connexion.html">Connexion</a></li>
-                <li class="btn"><a href="h2.html">Voyager</a></li>
+                <li class="btn"><a href="{{asset ('voyager')}}">Voyager</a></li>
             </ul>
         </nav>
        </div>

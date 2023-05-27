@@ -9,10 +9,10 @@
       <h1>formulaire d'inscription</h1>
       <nav>
         <ul>
-          <li class="bt"><a href="acceuil.blade.php">Accueil</a></li>
-          <li class="bt"><a href="#">Inscription</a></li>
-          <li class="bt"><a href="connexion.blade.php">Connexion</a></li>
-          <li class="bt"><a href="h2.blade.php"> Voyager</a></li>
+          <li class="bt"><a href="{{asset ('/accueil')}}">Accueil</a></li>
+          <li class="bt"><a href="{{asset ('client')}}">Inscription</a></li>
+          <li class="bt"><a href="{{asset ('connexion')}}">Connexion</a></li>
+          <li class="bt"><a href="{{asset ('voyager')}}"> Voyager</a></li>
         </ul>
       </nav>
     </header>
@@ -20,13 +20,13 @@
         <form method="post" action="{{url('/client-store')}}">
             @csrf
             <label for="nom">Nom :</label>
-            <input type="text" id="nom" name="nom" >
+            <input type="text" id="nom" name="noms" >
           
             <label for="prenom">Prénom :</label>
-            <input type="text" id="prenom" name="prenom" >
+            <input type="text" id="prenom" name="prenoms" >
           
             <label for="email">Numéro de téléphone :</label>
-            <input type="text" id="email" name="num_tel" >
+            <input type="text" id="email" name="numtel" >
           
             <label for="password">Mot de passe :</label>
             <input type="password" id="password" name="password" >
